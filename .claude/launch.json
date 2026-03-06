@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Camp Malibu",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "C:\\Users\\ariel\\Desktop\\Claude\\Malibu 2k26\\serve.bat"
+      ],
+      "port": 4200,
+      "autoPort": false
+    }
+  ]
+}
