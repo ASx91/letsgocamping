@@ -415,12 +415,12 @@ html, body {
 ══════════════════════════════════════════ */
 #fab-root {
   position: fixed;
-  right: 20px;
+  left: 20px;
   bottom: calc(var(--safe-bottom) + 18px);
   z-index: 500;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 0;
 }
 
@@ -469,7 +469,7 @@ html, body {
 #fab-menu {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 7px;
   margin-bottom: 10px;
   pointer-events: none;
@@ -495,11 +495,9 @@ html, body {
   border-radius: 999px;
   padding: 9px 16px 9px 12px;
   cursor: pointer;
-  transition: background 0.15s, transform 0.12s;
   user-select: none;
-  /* stagger via inline style */
   opacity: 0;
-  transform: translateX(14px);
+  transform: translateX(-14px);
   transition: opacity 0.22s ease, transform 0.28s cubic-bezier(0.34,1.56,0.64,1), background 0.15s;
 }
 #fab-root.open .fab-chip {
@@ -539,7 +537,7 @@ html, body {
     <div class="cover-badge">#LeaveNoTrace</div>
     <span class="cover-hint">swipe to explore →</span>
   </div>
-  <img class="slide-char" src="2__Excited.png" alt="">
+  <img class="slide-char" src="2. Excited.png" alt="">
 </div>
 
 <!-- ═══ SLIDE 2 — CLOTHING ═══ -->
@@ -557,7 +555,7 @@ html, body {
     <div class="check-item" data-key="clothing-3" data-slide="s2" onclick="toggle(this)"><div class="checkbox"></div><div class="check-label">Heattech</div></div>
     <div class="check-item" data-key="clothing-4" data-slide="s2" onclick="toggle(this)"><div class="checkbox"></div><div class="check-label">Comfy shoes</div></div>
   </div>
-  <img class="slide-char" src="9__Grin.png" alt="">
+  <img class="slide-char" src="9. Grin.png" alt="">
 </div>
 
 <!-- ═══ SLIDE 3 — HYGIENE ═══ -->
@@ -574,7 +572,7 @@ html, body {
     <div class="check-item" data-key="hygiene-2" data-slide="s3" onclick="toggle(this)"><div class="checkbox"></div><div class="check-label">Toilet paper</div></div>
     <div class="check-item" data-key="hygiene-3" data-slide="s3" onclick="toggle(this)"><div class="checkbox"></div><div class="check-label">Body wipes</div></div>
   </div>
-  <img class="slide-char" src="6__Stinky.png" alt="">
+  <img class="slide-char" src="6. Stinky.png" alt="">
 </div>
 
 <!-- ═══ SLIDE 4 — CAMPING TINGS ═══ -->
@@ -596,7 +594,7 @@ html, body {
     <div class="check-item" data-key="camping-7" data-slide="s4" onclick="toggle(this)"><div class="checkbox"></div><div class="check-label">Portable charger</div></div>
     <div class="check-item" data-key="camping-8" data-slide="s4" onclick="toggle(this)"><div class="checkbox"></div><div class="check-label">Firewood</div></div>
   </div>
-  <img class="slide-char" src="7__Sleepy.png" alt="">
+  <img class="slide-char" src="7. Sleepy.png" alt="">
 </div>
 
 <!-- ═══ SLIDE 5 — KITCHEN TINGS ═══ -->
@@ -617,7 +615,7 @@ html, body {
     <div class="check-item" data-key="kitchen-6" data-slide="s5" onclick="toggle(this)"><div class="checkbox"></div><div class="check-label">Mugs + Cups</div></div>
     <div class="check-item" data-key="kitchen-7" data-slide="s5" onclick="toggle(this)"><div class="checkbox"></div><div class="check-label">Shot cups</div></div>
   </div>
-  <img class="slide-char" src="11__Cooking.png" alt="">
+  <img class="slide-char" src="11. Cooking.png" alt="">
 </div>
 
 <!-- ═══ SLIDE 6 — NOM NOMS ═══ -->
@@ -635,7 +633,7 @@ html, body {
     <div class="check-item" data-key="nomnoms-3" data-slide="s6" onclick="toggle(this)"><div class="checkbox"></div><div class="check-label">Snacks</div></div>
     <div class="check-item" data-key="nomnoms-4" data-slide="s6" onclick="toggle(this)"><div class="checkbox"></div><div class="check-label">Cup Ramen</div></div>
   </div>
-  <img class="slide-char" src="10__Hungry.png" alt="">
+  <img class="slide-char" src="10. Hungry.png" alt="">
 </div>
 
 <!-- ═══ SLIDE 7 — MEALS TBD ═══ -->
@@ -647,7 +645,7 @@ html, body {
     <div class="meals-tbd"><span>T</span><span>B</span><span>D</span></div>
     <div class="meals-pill">Something's cooking... 👀</div>
   </div>
-  <img class="slide-char" src="3__Confused.png" alt="">
+  <img class="slide-char" src="3. Confused.png" alt="">
 </div>
 
 <!-- ═══ SLIDE 8 — FUNSIES ═══ -->
@@ -663,7 +661,7 @@ html, body {
     <div class="check-item" data-key="funsies-1" data-slide="s8" onclick="toggle(this)"><div class="checkbox"></div><div class="check-label">Games</div></div>
     <div class="check-item" data-key="funsies-2" data-slide="s8" onclick="toggle(this)"><div class="checkbox"></div><div class="check-label">More Boardgames</div></div>
   </div>
-  <img class="slide-char" src="8__Music.png" alt="">
+  <img class="slide-char" src="8. Music.png" alt="">
 </div>
 
 <!-- ═══ SLIDE 9 — MAP ═══ -->
@@ -680,7 +678,7 @@ html, body {
     <div class="map-note"><!-- Add real address here --></div>
     <a class="map-btn" href="#" target="_blank">Open in Maps</a>
   </div>
-  <img class="slide-char" src="5__Contemplating.png" alt="">
+  <img class="slide-char" src="5. Contemplating.png" alt="">
 </div>
 
 <!-- ═══ SLIDE 10 — OUTRO ═══ -->
@@ -694,7 +692,7 @@ html, body {
     <div class="hashtag">#LeaveNoTrace</div>
     <div class="outro-see-you">See you thereeee 🏕️</div>
   </div>
-  <img class="slide-char" src="1__Happy.png" alt="">
+  <img class="slide-char" src="1. Happy.png" alt="">
 </div>
 
 </div><!-- end slideshow -->
